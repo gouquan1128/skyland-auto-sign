@@ -29,4 +29,6 @@ jobs:
           SC3_SENDKEY: ${{ secrets.SC3_SENDKEY }}
           SC3_UID: ${{ secrets.SC3_UID }}
         run: |
+          echo "Token 长度: ${#SKYLAND_TOKEN}"
+          echo "Token 前4位: ${SKYLAND_TOKEN:0:4}"
           echo -e "3\n$SKYLAND_TOKEN\n" | python skyland.py
