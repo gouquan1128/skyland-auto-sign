@@ -29,4 +29,4 @@ jobs:
           SC3_SENDKEY: ${{ secrets.SC3_SENDKEY }}
           SC3_UID: ${{ secrets.SC3_UID }}
         run: |
-          echo -e "3\n$TOKEN\n" | python skyland.py
+          echo -e "3\n$SKYLAND_TOKEN\n" | python skyland.py
